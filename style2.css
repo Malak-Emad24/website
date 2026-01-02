@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#130F08, #3D271A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background: rgba(30, 30, 30, 0.9);
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #D7CBBE;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Title */
+.form-title {
+    color: #D7CBBE;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Input groups */
+.input-group {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #D7CBBE;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group:focus-within {
+    border-color: #645A4E;
+}
+
+.input-group i {
+    color: #D7CBBE;
+    margin-right: 10px;
+}
+
+.input-group input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-group label {
+    display: none;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #645A4E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #D7CBBE;
+    color: #130F08;
+}
+
+/* Links */
+.recover a,
+.links button,
+.links a {
+    color: #D7CBBE;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.recover a:hover,
+.links button:hover,
+.links a:hover {
+    color: #645A4E;
+}
+
+/* OR divider */
+.or {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 15px 0;
+}
+
+/* Social icons */
+.icons i {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #D7CBBE;
+    color: #D7CBBE;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icons i:hover {
+    background: #645A4E;
+    color: #fff;
+}

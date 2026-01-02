@@ -1,0 +1,125 @@
+body {
+    color: #eee;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background-image: url("images/background.jpg");
+}
+.section-title{
+    font-family:Bebas Neue;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 5;
+    color:#b88c4e;
+    text-align: center;
+    
+}
+.checkout-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+
+.billing, .summary {
+    background: #151515a3;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+
+}
+
+.billing h3, .summary h3 {
+    border-bottom: 1px solid #c79a5b;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #c79a5b;
+    font-weight: 5;
+    font-family: Bebas Neue;
+    letter-spacing: 1px;
+    word-spacing:2px;
+}
+
+input, select, textarea {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: #eee;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #b88c4e;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #8e6d3e;
+}
+
+.summary ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.summary ul li {
+    margin-bottom: 10px;
+}
+
+.invoice {
+    margin-top: 15px;
+}
+
+.invoice div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+/* Modals */
+.modal-bg {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.modal button {
+    width: auto;
+    margin: 10px 5px 0 5px;
+}
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #c79a5b;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    color: #b88c4e;
+}
+
