@@ -2,22 +2,20 @@
 session_start();
 include 'db.php';
 
-// مثال بيانات المستخدم بعد تسجيل الدخول
-// $_SESSION['user_name'] = "Malak Enaizi";
-// $_SESSION['user_email'] = "malak@example.com";
-// $_SESSION['user_phone'] = "912345678";
 
+$_SESSION['user_name']  = $row['name'];
+$_SESSION['user_email'] = $row['email'];
+$_SESSION['user_phone'] = $row['phone'];
 if(empty($_SESSION['cart'])) {
     header('Location: index.php');
     exit;
 }
 
 $total = 0;
-$deliveryCharge = 5; // مثال رسوم التوصيل
-$discount = 0;       // مثال الخصم
+$deliveryCharge = 5; 
+$discount = 0;       
 $finalTotal = 0;
 
-// حساب المجموع
 foreach($_SESSION['cart'] as $id => $qty){
     $result = mysqli_query($conn, "SELECT * FROM dishes WHERE id=$id");
     $product = mysqli_fetch_assoc($result);
@@ -36,9 +34,6 @@ $finalTotal = $total - $discount + $deliveryCharge;
   
 </head>
 <body>
-<a href="javascript:history.back()" class="back-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c79a5b"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
-</a>
 
 
 <h2 class="section-title">Checkout</h2>
